@@ -8,5 +8,7 @@
     </category>
     <!-- Providers -->
     <category label="30001">
+        <setting id="yts" type="bool" label="Yts" default="true"/>
+        
     </category>
 </settings>
