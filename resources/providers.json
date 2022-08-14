@@ -1,1 +1,29 @@
-
+[
+  {
+    "name": "yts",
+    "base_url": "https://yts.mx",
+    "results_parser": {
+      "url": "/api/v2/list_movies.json?query_term={query:q}&sort_by=seeds&order_by=desc",
+      "type": "json",
+      "rows": "./data/movies//torrents/",
+      "data": {
+        "title": "./title/text()",
+        "size": "./size/text()",
+        "seeds": "./seeds/text()",
+        "leeches": "./peers/text()",
+        "magnet": "./magnet/text()"
+      }
+    },
+    "keywords": {
+      "movie": "{title} {year}",
+      "show": "{title}",
+      "season": "{title} S{season:02}",
+      "episode": "{title} S{season:02}E{episode:02}"
+    },
+    "attributes": {
+      "color": "FFF14E13",
+      "icon": "provider_icons/yts.png"
+    }
+  }
+  
+]
