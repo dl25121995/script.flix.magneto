@@ -1,5 +1,5 @@
-[
-  {
+{
+  "yts": {
     "name": "yts",
     "base_url": "https://yts.mx",
     "results_parser": {
@@ -26,4 +26,4 @@
     }
   }
   
-]
+}
