@@ -1,5 +1,5 @@
-{
-  "yts": {
+[
+  {
     "name": "yts",
     "base_url": "https://yts.mx",
     "results_parser": {
@@ -21,9 +21,36 @@
       "episode": "{title} S{season:02}E{episode:02}"
     },
     "attributes": {
-      "color": "FFF14E13",
+      "color": "FF6AC045",
       "icon": "provider_icons/yts.png"
     }
+  },
+  {
+    "name": "1337x",
+    "base_url": "https://1337xx.to",
+    "results_parser": {
+      "url": "/search/{query:q+}/1/",
+      "rows": ".//tbody/tr",
+      "data": {
+        "magnet": "td[1]/a[2]/@href",
+        "title": "td[1]/a[2]/text()",
+        "seeds": "td[2]/text()",
+        "leeches": "td[3]/text()",
+        "size": "td[5]/text()"
+      },
+      "mutate": {
+        "size": "{size!b}"
+      }
+    },
+    "keywords": {
+      "movie": "{title} {year}",
+      "show": "{title}",
+      "season": "{title} S{season:02}",
+      "episode": "{title} S{season:02}E{episode:02}"
+    },
+    "attributes": {
+      "color": "FFF14E13",
+      "icon": "provider_icons/1337x.png"
+    }
   }
-  
-}
+]
