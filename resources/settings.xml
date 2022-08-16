@@ -9,6 +9,6 @@
     <!-- Providers -->
     <category label="30001">
         <setting id="yts" type="bool" label="yts" default="true"/>
-        
+        <setting id="1337x" type="bool" label="1337x" default="true"/>
     </category>
 </settings>
